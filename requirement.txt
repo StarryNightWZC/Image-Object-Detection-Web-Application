@@ -1,0 +1,13 @@
+flask==1.0
+flask-login==0.4.1
+flask-wtf==0.14.2
+wheel==0.34.2
+flask_sqlalchemy==2.3.2
+mysql-connector-python==8.0.19
+mysqlclient==1.4.6
+opencv-python-headless==4.2.0.32
+validators==0.14.2
+passlib==1.7.2
+gunicorn==20.0.4
+Boto3==1.12.16
+Pytz==2019.3

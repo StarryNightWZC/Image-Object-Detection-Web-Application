@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Dashboard</h1>
+    <h1><font size="5" face="verdana" color="#2f4f4f">Hi, {{ current_user.username }}!</font></h1>
+    <h4><font size="4" face="verdana" color="#2f4f4f">Browse your Image and Select! You can select multiple images.</font></h4>
+    <br>
+<div style="width:100%;text-align:center">
+<form id="upload-form" action="{{url_for('dashboard')}}" method="POST" enctype="multipart/form-data">
+<input type="file" name="file" accept="image/*" multiple>
+<button class="btn btn-success" type="submit">Upload Photo</button>
+</form>
+   <font size="2" face="verdana" color="#2f4f4f" > Accepted Formates: GIF, PNG and JPEG</font>
+</div>
+{% endblock %}

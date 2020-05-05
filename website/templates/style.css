@@ -1,0 +1,14 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.imgBox
+{
+    width: 20px;
+    margin: 50px auto 20px;
+}
+.imgBox img
+{
+    width: 100%;
+}

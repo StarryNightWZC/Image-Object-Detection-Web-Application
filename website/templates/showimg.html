@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <div class="jumbotron text-center">
+      <h1>Object Detection Result</h1>
+  </div>
+<table><tr>
+    <td>
+   <img class="img-responsive" src=" {{url_for('send_image_original', filename=outputname,quality=95)}}" width="500px"hspace="20px" vspace="5px">
+    </td>
+    <td>
+    <img class="img-responsive" src=" {{url_for('send_image_detect_result', filename=outputname,quality=95)}}" width="500px"hspace="20px" vspace="5px">
+    </td>
+</tr></table>
+{% endblock %}
